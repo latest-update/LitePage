@@ -1,0 +1,27 @@
+{
+    "name": "latest-update/litepage",
+    "description": "...",
+    "type": "framework",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/",
+            "Core\\": "Core/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rakhat",
+            "email": "95361982+latest-update@users.noreply.github.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "dompdf/dompdf": "dev-master",
+        "spipu/html2pdf": "dev-master",
+        "knplabs/knp-snappy": "2.0.x-dev",
+        "ext-simplexml": "*",
+        "ext-json": "*",
+      "ext-mbstring": "*"
+    }
+}
