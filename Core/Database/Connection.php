@@ -28,8 +28,6 @@ class Connection
         $this->host = $host;
     }
 
-
-
     protected function DBSelect(string $query) : array
     {
         return self::sendSql( new Sqlf('select', $query) );

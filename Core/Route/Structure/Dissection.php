@@ -15,7 +15,8 @@ class Dissection
 
     public function compare($url) : bool
     {
-        if (mb_strtolower(Http::$path) == mb_strtolower($url) and !$this->found) {
+        $urlWithoutParameters = explode('?', mb_strtolower(Http::$path));
+        if ($urlWithoutParameters[0] == mb_strtolower($url) and !$this->found) {
             $this->found = true;
             return true;
         }
